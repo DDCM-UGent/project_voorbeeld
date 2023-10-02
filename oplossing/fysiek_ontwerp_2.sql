@@ -12,6 +12,7 @@ drop function if exists controleer_nr_tag();
 drop function if exists controleer_tijdstip_quote();
 drop function if exists controleer_tijdstip_retweet();
 
+
 alter table quote add constraint check_quote_id check (id <> quote.gequoot);
 alter table tag add constraint check_tag_nr check (nr >= 1);
 alter table mention add constraint check_mention_nr check (nr >= 1);
