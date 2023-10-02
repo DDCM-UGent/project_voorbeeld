@@ -29,7 +29,7 @@
   * check: nr $\geq$ 1
   * controleer bij toevoeging of nr kleiner dan of gelijk is aan het aantal @-symbolen dat voorkomt in de inhoud van de tweet met id = id
 
-* **retweet** (id: integer, gebruikersnaam: varcharn tijdstip: timestamp)
+* **retweet** (id: integer, gebruikersnaam: varchar, tijdstip: timestamp)
   * primaire sleutel: {id, gebruikersnaam}
   * vreemde sleutels: id -> tweet{id}, gebruikersnaam -> gebruiker{gebruikersnaam}
   * not null: tijdstip
